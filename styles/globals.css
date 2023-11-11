@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.swiper-button-prev, .swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 999 !important;
+  background-color: rgba(0,0,0, 0.2);
+  border-radius: 50%;
+  color: #fff !important;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.input-typetext {
+  padding-left: 0 !important ;
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="52" viewBox="0 0 46 52">
+    <defs>
+        <filter id="Path_2414" width="46" height="52" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#131313" flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Icon_map-pin" transform="translate(5 5)">
+        <path id="Rectangle_640" fill="none" d="M0 0H36V36H0z" data-name="Rectangle 640"/>
+        <g id="map-pin" transform="translate(4.5 1.5)">
+            <g filter="url(#Path_2414)" transform="translate(-9.5 -6.5)">
+                <path id="Path_2414-2" fill="#900" stroke="#900" stroke-linecap="round" stroke-linejoin="round" d="M30 14.5C30 25 16.5 34 16.5 34S3 25 3 14.5a13.5 13.5 0 1 1 27 0z" data-name="Path 2414" transform="translate(6.5 5.5)"/>
+            </g>
+            <circle id="Ellipse_191" cx="10" cy="10" r="10" fill="#fff" data-name="Ellipse 191" transform="translate(3.5 3.5)"/>
+            <g id="home" transform="translate(8.5 8.5)">
+                <g id="Group_2656" data-name="Group 2656">
+                    <path id="Path_3550" fill="#900" d="M13.589 4.72L8.878.083a.292.292 0 0 0-.408 0L3.758 4.72a.28.28 0 0 0-.063.309.288.288 0 0 0 .266.175h.559v4.1a.7.7 0 0 0 .7.694h2.235V7.69a.286.286 0 0 1 .288-.284H9.6a.286.286 0 0 1 .288.284V10h2.229a.7.7 0 0 0 .7-.694V5.2h.559a.288.288 0 0 0 .266-.175.28.28 0 0 0-.053-.305z" data-name="Path 3550" transform="translate(-3.674)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

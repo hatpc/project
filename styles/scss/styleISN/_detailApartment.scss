@@ -1,0 +1,601 @@
+.public-layout {
+  background-color: #eeeeee;
+}
+
+#detailApartmentBanner {
+  .aparment-banner {
+    position: relative;
+    width: 100%;
+    height: 351px;
+
+    &__info {
+      position: absolute;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: 3;
+
+      &--title {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      &--address {
+        font-family: Sarabun;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      max-height: 351px;
+
+      object-fit: cover;
+    }
+
+    &__color-overlay {
+      width: 100%;
+      height: 100%;
+
+      background: #000;
+      opacity: 0.4;
+
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+  }
+}
+
+#detailApartmentMenu {
+  background-color: #ffffff;
+
+  .menu-apartment-item {
+    display: inline-block;
+    color: #000;
+
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline #000;
+    }
+  }
+
+  .right-space {
+    margin-right: 2.5rem;
+  }
+
+  .active_item {
+    color: #b3091b;
+
+    &:hover {
+      text-decoration: underline #b3091b;
+    }
+  }
+
+  .scroll-menu {
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+  }
+
+  .scroll-menu::-webkit-scrollbar {
+    height: 0px;
+  }
+}
+
+#breadcrumbApartmentMenu {
+  .apartment-breadcrumb {
+    margin-top: 0.938rem;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 0px;
+    }
+  }
+
+  .first-item {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #999999;
+
+    &:hover {
+      text-decoration: underline #999999;
+    }
+  }
+
+  .child-item {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #999999;
+
+    &:hover {
+      text-decoration: underline #999999;
+    }
+  }
+
+  .child-active {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3f3f3f;
+  }
+}
+
+#detailApartmentOverview {
+  .apartment-overview {
+    &__title {
+      margin-top: 1.875rem;
+      margin-bottom: 1.75rem;
+
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #222222;
+    }
+
+    &__description {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #222222;
+
+      p:last-child {
+        text-align: center;
+        margin-top: 2.5rem;
+      }
+
+      img {
+        // width: 399px !important;
+        // height: 260.5px !important;
+        border-radius: 0px !important;
+        object-fit: unset !important;
+      }
+    }
+  }
+}
+
+#detailApartmentAmenities {
+  .apartment-amenities {
+    &__body {
+      &--title {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+        color: #222222;
+      }
+
+      .list-services {
+        margin: 1.094rem 0 1.094rem 0;
+
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 21px;
+        color: #222222;
+      }
+
+      .service-disabled {
+        // color: #a6a6a6;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+#detailApartmentLocation {
+  .apartment-location {
+    &__map {
+      &--title {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+        color: #222222;
+
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+#detailApartmentGallery {
+  .apartment-gallery {
+    &__media {
+      width: 399px;
+      height: 267px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &__btn {
+      margin-top: 1.75rem;
+      margin-bottom: 4.406rem;
+    }
+  }
+}
+
+.SRLCaptionContainer {
+  display: none !important;
+}
+
+.SRLThumbnailsContainer {
+  display: none !important;
+  .SRLThumb:hover {
+    opacity: 0.8 !important;
+  }
+}
+
+#detailApartmentRR {
+  .apartment-ratingReview {
+    &__title {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      color: #222222;
+
+      margin-bottom: 1.5rem;
+    }
+
+    &__total {
+      margin: unset;
+
+      &--star1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: unset !important;
+
+        height: 14.375rem;
+
+        border: 1px solid #999999;
+        box-sizing: border-box;
+        border-right: unset;
+
+        &__star {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 6.188rem;
+          height: 5.563rem;
+
+          font-family: Sarabun;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 31px;
+          color: #ffffff;
+
+          img {
+            margin-top: 1px;
+          }
+        }
+
+        &__status {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-family: Sarabun;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+          color: #222222;
+
+          margin-top: 16px;
+        }
+      }
+
+      &--star2 {
+        display: flex;
+        flex-direction: column;
+
+        padding: unset !important;
+
+        border: 1px solid #999999;
+        box-sizing: border-box;
+
+        &__list-star {
+          margin-top: auto;
+          margin-bottom: auto;
+
+          div {
+            display: flex;
+            align-items: center;
+          }
+
+          .text-span {
+            font-family: Sarabun;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            color: #b3b3b3;
+          }
+
+          div img {
+            vertical-align: unset !important;
+          }
+
+          &-bar {
+            width: 100%;
+            height: 18px;
+            background: #e7e7e7;
+            padding: unset !important;
+          }
+
+          .bar-5 {
+            background-color: #1ecd6f;
+          }
+
+          .bar-4 {
+            background-color: #aed888;
+          }
+
+          .bar-3 {
+            background-color: #ffd935;
+          }
+
+          .bar-2 {
+            background-color: #ffb235;
+          }
+
+          .bar-1 {
+            background-color: #ff8c5a;
+          }
+        }
+      }
+    }
+  }
+
+  .list-reviews {
+    // .user-review-info {
+    //   width: 52px;
+    //   height: 52px;
+
+    //   // padding-right: unset !important;
+    // }
+
+    .user-avatar img {
+      width: 52px;
+      height: 52px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+    }
+
+    .user-name {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      color: #3f3f3f;
+
+      padding-bottom: 2px;
+    }
+
+    .review-date {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #3f3f3f;
+
+      padding-top: 2px;
+    }
+
+    .review-star {
+      padding-bottom: 2px;
+    }
+
+    .text-star {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      color: #3f3f3f;
+    }
+
+    .review-content {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #222222;
+    }
+  }
+
+  .rating-review-paginate {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        padding: 0 3px 0;
+      }
+
+      li:nth-child(1) {
+        padding-right: 20px;
+      }
+
+      li:last-child {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .apartment-ratingReview__total--star1 {
+      border-right: 1px solid #999999;
+      border-bottom: unset;
+    }
+  }
+}
+
+.detail-apartment-title {
+  margin-top: 2.875rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+.detail-photo-title {
+  margin-top: 2.875rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+
+.btn-booknow {
+  max-width: 361px;
+  width: 100%;
+  height: 44px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+  background-color: #fe6b8d;
+  border: unset;
+  border-radius: unset;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-booknow-a {
+  width: 361px;
+}
+
+.mg-top-bottom {
+  margin-top: 3.125rem;
+  margin-bottom: 4.406rem;
+}
+
+.SRLOpened {
+  // height: 100vh;
+}
+
+.css-10yc0wa {
+  z-index: 999999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-1yn0gya {
+  height: 80% !important;
+}
+
+.SRLStage {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  height: 95%;
+  background-color: #fff;
+  top: 3%;
+}
+.SRLElementContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear-margin-row {
+  margin: unset;
+}
+
+#offers-detail {
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #131313;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 21px;
+    color: #131313;
+  }
+  .btn-booknow {
+    border: none;
+    background: #fe6b8d;
+    width: 361px;
+    color: #fff;
+    height: 44px;
+  }
+}

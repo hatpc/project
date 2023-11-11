@@ -1,0 +1,157 @@
+#detailProjectOverview,
+#detailProjectFacilities,
+#detailProjectLocation,
+#listOffers {
+  .title {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #131313;
+
+    padding: 46px 0 16px 0;
+  }
+
+  .sub-title {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #131313;
+
+    padding: 0 0 25px 0;
+  }
+
+  .description {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #131313;
+
+    padding: 0 0 25px 0;
+  }
+
+  .utilities-box {
+    padding: 25px 0;
+  }
+
+  .utilities {
+    &-title {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      color: #000000;
+
+      padding: 0 0 24px 0;
+    }
+
+    &-name {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: #131313;
+    }
+
+    &-text {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: #131313;
+    }
+
+    &-info {
+      padding: 55px 0 0 0;
+    }
+  }
+
+  .amenities-box {
+    padding-top: 45px;
+
+    .amenities-title {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      color: #222222;
+
+      padding: 0;
+    }
+
+    .list-services {
+      margin: 1.094rem 0 1.094rem 0;
+
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+      color: #222222;
+    }
+
+    .service-disabled {
+      // color: #a6a6a6;
+      opacity: 0.4;
+    }
+  }
+
+  .map {
+    &-title {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      color: #222222;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+  .title-2 {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    color: #131313;
+
+    padding: 45px 0 0 0;
+  }
+
+  .sub-title-2 {
+    font-family: Sarabun;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #131313;
+
+    padding: 16px 0 0 0;
+  }
+
+  .from-desc {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #131313;
+
+    padding: 24px 0 0 0;
+  }
+
+  .red-color {
+    color: #fe6b8d;
+  }
+}

@@ -1,0 +1,124 @@
+* {
+  font-family: Sarabun;
+}
+.signup-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+.field-name {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+.field-input {
+  background: #ffffff;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+.field-err {
+  background: #ffffff;
+  border: 1px solid #fe6b8d;
+  box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+::-webkit-input-placeholder {
+  font-style: normal !important;
+}
+:-moz-placeholder {
+  font-style: normal !important;
+}
+::-moz-placeholder {
+  font-style: normal !important;
+}
+:-ms-input-placeholder {
+  font-style: normal !important;
+}
+.required-mask {
+  color: #fe6b8d;
+}
+.form-signup {
+  padding: 40px 69.5px 40px 69.5px;
+  width: 500px;
+  background-color: #fff;
+}
+.sub-btn {
+  background: #fe6b8d;
+  height: 44px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  &:hover {
+    background-color: #fe6b8d;
+    border-color: #fe6b8d;
+    opacity: 0.7;
+  }
+}
+.confirm-text {
+  font-size: 16px;
+  line-height: 21px;
+  color: #131313;
+  text-align: left;
+}
+.error-message {
+  text-align: left;
+  color: #fe6b8d;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+input[disabled] {
+  background-color: #f2f2f2 !important;
+}
+.expried-page {
+  margin-top: 80px;
+  .title-expried {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #131313;
+  }
+  
+  .text-expried {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #131313;
+    max-width: 633.99px;
+  }
+  
+  .button-expried {
+    background: #fe6b8d;
+    border: none;
+    color: #fff;
+    width: 256.61px;
+    height: 46px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 576px) {
+  .form-signup {
+    padding: 25px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .form-signup {
+    padding: 15px;
+    width: 300px;
+  }
+  .expried-page {
+    .title-expried {
+      font-size: 18px;
+    }
+  }
+}

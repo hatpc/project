@@ -1,0 +1,127 @@
+#verifyEmailModal {
+  * {
+    font-family: Sarabun;
+    outline: none;
+  }
+  .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .email-input {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .required-mask {
+    color: #fe6b8d;
+  }
+  input {
+    padding: 0 10px;
+    background: #ffffff;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    height: 44px;
+    font-style: normal;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .choose-method {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .signup-btn {
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    width: 100%;
+    height: 44px;
+    font-weight: 700;
+  }
+  .verify-email-btn {
+    background: #fe6b8d;
+  }
+  .google-btn {
+    border-radius: 1rem !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-family: Sarabun !important;
+    position: relative;
+    color: #fff !important;
+    box-shadow: none !important;
+    background-color: #4285f4 !important;
+    div {
+      position: absolute;
+      padding: 0 3px 2px 4px !important;
+      left: 10px;
+    }
+    span {
+      font-weight: 700 !important;
+    }
+  }
+  .err-message {
+    background-color: unset;
+    p {
+      font-size: 16px;
+      line-height: 21px;
+      color: #fe6b8d;
+    }
+  }
+  .err-server {
+    background: #f8d7da;
+    color: #131313;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .success-server {
+    background: #93e5bf;
+    color: #131313;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .invalid-email {
+    border: 1px solid #fe6b8d;
+  }
+
+  button:hover,
+  button[hover] {
+    opacity: 0.7;
+  }
+  .kep-login-facebook {
+    background: #3b5998;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    height: 44px;
+    font-family: 'Sarabun';
+    text-transform: revert;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .box-facebook {
+    border-radius: 1rem;
+    width: 100%;
+    position: relative;
+    background: #3b5998;
+    cursor: pointer;
+    font-weight: 700;
+    &:hover {
+      opacity: 0.8 !important;
+    }
+    img {
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  .get-email {
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

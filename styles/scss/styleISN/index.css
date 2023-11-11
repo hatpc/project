@@ -1,0 +1,1413 @@
+* {
+  font-family: Sarabun;
+}
+
+.signup-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.field-name {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.field-input {
+  background: #ffffff;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+
+.field-err {
+  background: #ffffff;
+  border: 1px solid #fe6b8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+
+::-webkit-input-placeholder {
+  font-style: normal !important;
+}
+
+:-moz-placeholder {
+  font-style: normal !important;
+}
+
+::-moz-placeholder {
+  font-style: normal !important;
+}
+
+:-ms-input-placeholder {
+  font-style: normal !important;
+}
+
+.required-mask {
+  color: #fe6b8d;
+}
+
+.form-signup {
+  padding: 40px 69.5px 40px 69.5px;
+  width: 500px;
+  background-color: #fff;
+}
+
+.sub-btn {
+  background: #fe6b8d;
+  height: 44px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+}
+
+.sub-btn:hover {
+  background-color: #fe6b8d;
+  border-color: #fe6b8d;
+  opacity: 0.7;
+}
+
+.confirm-text {
+  font-size: 16px;
+  line-height: 21px;
+  color: #131313;
+  text-align: left;
+}
+
+.error-message {
+  text-align: left;
+  color: #fe6b8d;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+input[disabled] {
+  background-color: #f2f2f2 !important;
+}
+
+.expried-page {
+  margin-top: 80px;
+}
+
+.expried-page .title-expried {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #131313;
+}
+
+.expried-page .text-expried {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #131313;
+  max-width: 633.99px;
+}
+
+.expried-page .button-expried {
+  background: #fe6b8d;
+  border: none;
+  color: #fff;
+  width: 256.61px;
+  height: 46px;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 576px) {
+  .form-signup {
+    padding: 25px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .form-signup {
+    padding: 15px;
+    width: 300px;
+  }
+  .expried-page .title-expried {
+    font-size: 18px;
+  }
+}
+
+.modal-content {
+  max-width: 487px;
+  width: 100% !important;
+  border-radius: unset !important;
+}
+
+.container-fluid {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#loginForm section {
+  text-align: unset !important;
+}
+
+#loginForm .flex-column {
+  margin: 0;
+}
+
+#loginForm .login-form__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+#loginForm .login-form .alert {
+  border-radius: unset;
+}
+
+#loginForm .login-form .alert p {
+  margin: 0;
+}
+
+#loginForm .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+#loginForm .form-group a {
+  color: #007bff !important;
+}
+
+#loginForm .form-group a:hover {
+  color: #0459b4 !important;
+}
+
+#loginForm .form-group span {
+  padding: 0 !important;
+  font-weight: 700 !important;
+}
+
+#loginForm .form-group label {
+  margin: 0;
+}
+
+#loginForm .form-group__input {
+  max-width: 362px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #999999 !important;
+  padding: 0 10px;
+}
+
+#loginForm .form-group__button {
+  max-width: 362px;
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+
+#loginForm .form-group__button:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+#loginForm .form-group__label {
+  font-size: 14px;
+}
+
+#loginForm .form-group__checkbox {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+}
+
+#loginForm .btn-default {
+  background-color: #fe6b8d;
+}
+
+#loginForm .btn-facebook {
+  max-width: 362px;
+  width: 100%;
+  background-color: #3b5998;
+}
+
+#loginForm .btn-google {
+  max-width: 362px;
+  background-color: #4285f4;
+}
+
+#loginForm .btn-signup {
+  color: #fe6b8d;
+  background-color: #fff;
+  border: 1px solid #fe6b8d;
+}
+
+#loginForm .btn-signup:hover {
+  color: #fe6b8d;
+  opacity: 0.8;
+}
+
+#loginForm .link:hover {
+  text-decoration: underline;
+}
+
+#loginForm .icon-size-btn {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+#loginForm .input-error {
+  border: 1px solid #fe6b8d !important;
+}
+
+#loginForm .aler-error {
+  margin-bottom: unset;
+  color: #fe6b8d;
+}
+
+#loginForm .required-mask {
+  color: #fe6b8d;
+}
+
+#loginForm .alert-server {
+  padding-left: 16px;
+  border: none;
+}
+
+#loginForm .google-btn {
+  max-width: 362px;
+  width: 100%;
+  border-radius: 1px !important;
+  font-size: 16px !important;
+  font-family: Sarabun !important;
+  position: relative;
+  color: #fff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: #4285f4 !important;
+}
+
+#loginForm .google-btn div {
+  position: absolute;
+  padding: 0 3px 2px 4px !important;
+  left: 10px;
+}
+
+#loginForm .signup-btn {
+  border: none;
+  border-radius: 1px;
+  color: #fff;
+  height: 44px;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.7;
+  cursor: default !important;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .form-group .float-left {
+    float: none !important;
+  }
+  .form-group .float-right {
+    float: none !important;
+  }
+}
+
+#verifyEmailModal * {
+  font-family: Sarabun;
+  outline: none;
+}
+
+#verifyEmailModal .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+#verifyEmailModal .email-input {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#verifyEmailModal .required-mask {
+  color: #fe6b8d;
+}
+
+#verifyEmailModal input {
+  padding: 0 10px;
+  background: #ffffff;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  width: 100%;
+}
+
+#verifyEmailModal .choose-method {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#verifyEmailModal .signup-btn {
+  border: none;
+  border-radius: 1px;
+  color: #fff;
+  width: 100%;
+  height: 44px;
+  font-weight: 700;
+}
+
+#verifyEmailModal .verify-email-btn {
+  background: #fe6b8d;
+}
+
+#verifyEmailModal .google-btn {
+  border-radius: 1px !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  font-family: Sarabun !important;
+  position: relative;
+  color: #fff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: #4285f4 !important;
+}
+
+#verifyEmailModal .google-btn div {
+  position: absolute;
+  padding: 0 3px 2px 4px !important;
+  left: 10px;
+}
+
+#verifyEmailModal .google-btn span {
+  font-weight: 700 !important;
+}
+
+#verifyEmailModal .err-message {
+  background-color: unset;
+}
+
+#verifyEmailModal .err-message p {
+  font-size: 16px;
+  line-height: 21px;
+  color: #fe6b8d;
+}
+
+#verifyEmailModal .err-server {
+  background: #f8d7da;
+  color: #131313;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#verifyEmailModal .success-server {
+  background: #93e5bf;
+  color: #131313;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#verifyEmailModal .invalid-email {
+  border: 1px solid #fe6b8d;
+}
+
+#verifyEmailModal button:hover,
+#verifyEmailModal button[hover] {
+  opacity: 0.7;
+}
+
+#verifyEmailModal .kep-login-facebook {
+  background: #3b5998;
+  border: none;
+  border-radius: 1px;
+  color: #fff;
+  height: 44px;
+  font-family: 'Sarabun';
+  text-transform: revert;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#verifyEmailModal .box-facebook {
+  width: 100%;
+  position: relative;
+  background: #3b5998;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#verifyEmailModal .box-facebook:hover {
+  opacity: 0.8 !important;
+}
+
+#verifyEmailModal .box-facebook img {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#verifyEmailModal .get-email p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+* {
+  font-family: Sarabun;
+}
+
+.card {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5e5e5;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.reset {
+  height: 100%;
+  width: 487px;
+  background-color: #ffffff;
+  margin-top: 137px;
+  margin-bottom: 70px;
+  padding: 40px 63px 40px 63px;
+}
+
+.password {
+  border-radius: 1px;
+  background-color: #ffffff;
+  height: 44px;
+}
+
+.save-button {
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: #fe6b8d;
+  border-color: #fe6b8d;
+  border-radius: 1px;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  opacity: 0.7;
+}
+
+.reset-input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+}
+
+.reset-input-err {
+  background: #ffffff;
+  border: 1px solid #fe6b8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1px;
+  height: 44px;
+  font-style: normal;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.form {
+  margin-top: -20px;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+  .reset {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    min-height: 516px;
+  }
+  .reset {
+    padding: 1.5rem;
+    width: 300px;
+    height: 414px;
+    margin-top: 32px;
+  }
+  .card-body {
+    padding: 32px;
+  }
+}
+
+* {
+  font-family: Sarabun;
+}
+
+.signup-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.field-name {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.field-input {
+  background: #ffffff;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+
+.field-err {
+  background: #ffffff;
+  border: 1px solid #fe6b8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+  font-style: normal;
+  padding: 0 10px;
+}
+
+::-webkit-input-placeholder {
+  font-style: normal !important;
+}
+
+:-moz-placeholder {
+  font-style: normal !important;
+}
+
+::-moz-placeholder {
+  font-style: normal !important;
+}
+
+:-ms-input-placeholder {
+  font-style: normal !important;
+}
+
+.required-mask {
+  color: #fe6b8d;
+}
+
+.form-signup {
+  padding: 40px 69.5px 40px 69.5px;
+  width: 500px;
+  background-color: #fff;
+}
+
+.sub-btn {
+  background: #fe6b8d;
+  height: 44px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+}
+
+.sub-btn:hover {
+  background-color: #fe6b8d;
+  border-color: #fe6b8d;
+  opacity: 0.7;
+}
+
+.confirm-text {
+  font-size: 16px;
+  line-height: 21px;
+  color: #131313;
+  text-align: left;
+}
+
+.error-message {
+  text-align: left;
+  color: #fe6b8d;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+input[disabled] {
+  background-color: #f2f2f2 !important;
+}
+
+.expried-page {
+  margin-top: 80px;
+}
+
+.expried-page .title-expried {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #131313;
+}
+
+.expried-page .text-expried {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #131313;
+  max-width: 633.99px;
+}
+
+.expried-page .button-expried {
+  background: #fe6b8d;
+  border: none;
+  color: #fff;
+  width: 256.61px;
+  height: 46px;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 576px) {
+  .form-signup {
+    padding: 25px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .form-signup {
+    padding: 15px;
+    width: 300px;
+  }
+  .expried-page .title-expried {
+    font-size: 18px;
+  }
+}
+
+* {
+  font-family: Sarabun;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.required-mask {
+  color: #fe6b8d;
+}
+
+.forgot-form {
+  width: 361px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forgot-modal {
+  margin-top: -60px;
+}
+
+.input-email {
+  border-radius: 1rem;
+  border: 1px solid #999999;
+  height: 44px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.input-email-err {
+  border-radius: 1rem;
+  border: 1px solid #fe6b8d;
+  height: 44px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.remind-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #131313;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.reset-button {
+  width: 100%;
+  height: 44px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #fe6b8d;
+  border-color: #fe6b8d;
+  border-radius: 1px;
+  font-weight: bold;
+  border: none;
+}
+
+.reset-button:hover {
+  opacity: 0.7;
+}
+
+.back-to-login {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #131313;
+  margin-bottom: 41px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:link:hover {
+  text-decoration: underline;
+}
+
+.modal-content {
+  width: 487px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-err {
+  background: #f8d7da;
+  color: #131313;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 1px;
+}
+
+.message-succ {
+  background: #93e5bf;
+  color: #131313;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 1px;
+}
+
+.email-validate-error p {
+  font-size: 16px;
+  line-height: 21px;
+  color: #fe6b8d;
+}
+
+@media only screen and (max-width: 768px) {
+  .forgot-form {
+    padding: 12px;
+  }
+}
+
+
+#loadingPage .spinner-border {
+  position: fixed;
+  top: 50%;
+  left: 48.2%;
+}
+
+#apartmentSlider .container-slider {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#apartmentSlider .container-slider:hover img {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#apartmentSlider .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+#apartmentSlider .slide.active {
+  opacity: 1;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+#apartmentSlider .btn-slide {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  outline: none !important;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#apartmentSlider .prevSlide {
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+#apartmentSlider .nextSlide {
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+#apartmentSlider .dot-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#apartmentSlider .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #f1f1f1;
+}
+
+#apartmentSlider .dot.active {
+  background-color: #fe6b8d;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.overlay-text {
+  position: absolute;
+  opacity: 1;
+  color: #ffffff;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  top: 42%;
+  left: 40%;
+  z-index: 3;
+}
+
+.service-banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 351px;
+}
+
+.color-overlay {
+  background-color: #000000;
+  opacity: 0.4;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.public-layout {
+  background-color: #eeeeee;
+}
+
+#detailApartmentBanner .aparment-banner {
+  position: relative;
+  width: 100%;
+  height: 351px;
+}
+
+#detailApartmentBanner .aparment-banner__info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+#detailApartmentBanner .aparment-banner__info--title {
+  font-family: Noto Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+#detailApartmentBanner .aparment-banner__info--address {
+  font-family: Sarabun;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+#detailApartmentBanner .aparment-banner__img {
+  width: 100%;
+  height: 100%;
+  max-height: 351px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#detailApartmentBanner .aparment-banner__color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+#detailApartmentMenu {
+  background-color: #ffffff;
+}
+
+#detailApartmentMenu .menu-apartment-item {
+  display: inline-block;
+  color: #000;
+  text-decoration: unset;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#detailApartmentMenu .right-space {
+  margin-right: 2.5rem;
+}
+
+#detailApartmentMenu .active_item {
+  color: #fe6b8d;
+}
+
+#breadcrumbApartmentMenu .apartment-breadcrumb {
+  margin-top: 0.938rem;
+}
+
+#detailApartmentOverview .apartment-overview__title {
+  margin-top: 2.875rem;
+  margin-bottom: 1.75rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+
+#detailApartmentOverview .apartment-overview__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #222222;
+}
+
+#detailApartmentOverview .apartment-overview__image {
+  margin-top: 2.5rem;
+}
+
+#detailApartmentOverview .apartment-overview__image img {
+  width: 399px;
+  height: 260.5px;
+  border-radius: 0px;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+
+#detailApartmentAmenities .apartment-amenities__body--title {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #222222;
+}
+
+#detailApartmentAmenities .apartment-amenities__body .list-services {
+  margin: 1.094rem 0 1.094rem 0;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #222222;
+}
+
+#detailApartmentAmenities .apartment-amenities__body .service-disabled {
+  opacity: 0.4;
+}
+
+#detailApartmentLocation .apartment-location__map--title {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+
+#detailApartmentGallery .apartment-gallery__media {
+  width: 399px;
+  height: 267px;
+}
+
+#detailApartmentGallery .apartment-gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+#detailApartmentGallery .apartment-gallery__btn {
+  margin-top: 1.625rem;
+}
+
+#detailApartmentRR .apartment-ratingReview__title {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #222222;
+  margin-bottom: 1.5rem;
+}
+
+#detailApartmentRR .apartment-ratingReview__total {
+  margin: unset;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: unset !important;
+  height: 14.375rem;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: unset;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star1__star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.188rem;
+  height: 5.563rem;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star1__star img {
+  margin-top: 1px;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star1__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #222222;
+  margin-top: 16px;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: unset !important;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .text-span {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #b3b3b3;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star div img {
+  vertical-align: unset !important;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star-bar {
+  width: 100%;
+  height: 18px;
+  background: #e7e7e7;
+  padding: unset !important;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .bar-5 {
+  background-color: #1ecd6f;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .bar-4 {
+  background-color: #aed888;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .bar-3 {
+  background-color: #ffd935;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .bar-2 {
+  background-color: #ffb235;
+}
+
+#detailApartmentRR .apartment-ratingReview__total--star2__list-star .bar-1 {
+  background-color: #ff8c5a;
+}
+
+#detailApartmentRR .list-reviews .user-avatar img {
+  width: 52px;
+  height: 52px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#detailApartmentRR .list-reviews .user-name {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3f3f3f;
+  padding-bottom: 2px;
+}
+
+#detailApartmentRR .list-reviews .review-date {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3f3f3f;
+  padding-top: 2px;
+}
+
+#detailApartmentRR .list-reviews .review-star {
+  padding-bottom: 2px;
+}
+
+#detailApartmentRR .list-reviews .text-star {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3f3f3f;
+}
+
+#detailApartmentRR .list-reviews .review-content {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #222222;
+}
+
+#detailApartmentRR .rating-review-paginate ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#detailApartmentRR .rating-review-paginate ul li {
+  padding: 0 3px 0;
+}
+
+#detailApartmentRR .rating-review-paginate ul li:nth-child(1) {
+  padding-right: 20px;
+}
+
+#detailApartmentRR .rating-review-paginate ul li:last-child {
+  padding-left: 20px;
+}
+
+.detail-apartment-title {
+  margin-top: 2.875rem;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+
+.btn-booknow {
+  max-width: 361px;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 4.406rem;
+  margin-top: 3.125rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #fe6b8d;
+  border: unset;
+  border-radius: unset;
+}
+
+.css-10yc0wa {
+  z-index: 999999 !important;
+}
+
+.clear-margin-row {
+  margin: unset;
+}
+/*# sourceMappingURL=index.css.map */

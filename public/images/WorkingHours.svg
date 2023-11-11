@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_1169" fill="#fff" stroke="#707070" d="M0 0H24V24H0z" data-name="Rectangle 1169" transform="translate(7703 9471)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_162" clip-path="url(#prefix__clip-path)" data-name="Mask Group 162" opacity="0.6" transform="translate(-7703 -9471)">
+        <g id="prefix___015-clock" data-name="015-clock" transform="translate(7704 9472)">
+            <g id="prefix__Group_2388" data-name="Group 2388">
+                <g id="prefix__Group_2387" data-name="Group 2387">
+                    <path id="prefix__Path_3349" d="M11 0a11 11 0 1 0 11 11A11.013 11.013 0 0 0 11 0zm.458 21.06v-1.352a.458.458 0 0 0-.917 0v1.352a10.08 10.08 0 0 1-9.6-9.6h1.351a.458.458 0 1 0 0-.917H.94a10.08 10.08 0 0 1 9.6-9.6v1.349a.458.458 0 1 0 .917 0V.94a10.08 10.08 0 0 1 9.6 9.6h-1.349a.458.458 0 0 0 0 .917h1.352a10.08 10.08 0 0 1-9.602 9.603z" data-name="Path 3349"/>
+                    <path id="prefix__Path_3350" d="M236.455 92.908a.881.881 0 0 0 .045-.223.892.892 0 0 0-.174-.508L239.207 86a.458.458 0 0 0-.831-.388l-2.879 6.17a.91.91 0 0 0 .086 1.816.881.881 0 0 0 .223-.045l3.578 3.578a.458.458 0 0 0 .648-.648z" data-name="Path 3350" transform="translate(-224.584 -81.684)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
