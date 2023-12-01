@@ -96,8 +96,8 @@
   }
   .like-contents {
     position: absolute;
-    top: 45px;
-    right: 30px;
+    top: 300px;
+    right: 85px;
     z-index: 3;
     display: flex;
     justify-content: center;
@@ -245,9 +245,9 @@
   }
   .special-offers {
     position: absolute;
-    top: 45px;
+    top: 300px;
     z-index: 1;
-    left: 30px;
+    left: 85px;
     .rectangle {
       border-radius: 0;
       height: 30px;
@@ -278,7 +278,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 26px;
+    height: 40px;
+    margin-right: 55px;
   }
   .item-number {
     display: flex;
@@ -386,8 +387,8 @@
     width: 100% !important;
   }
   .like-contents {
-    top: 35px !important;
-    right: 30px !important;
+    top: 300px !important;
+    right: 85px !important;
   }
   .content {
     width: 100%;

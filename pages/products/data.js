@@ -1,4 +1,4 @@
-import { Calendar, Calendar1, Calendar2, Calendar3, Calendar4 } from '../../assets/images/nancy';
+import { Calendar, Calendar1, Calendar2, Calendar3, Calendar4 } from '../../public/images/nancy';
 
 const data = {
   listProducts: [

@@ -4,13 +4,15 @@ import HomeProject from './components/HomeProject.component';
 import HomeAboutUs from './components/HomeAboutUs.component';
 import BannerSlides from '../layouts/commons/bannerSlides/BannerSlides';
 import HomeBlog from './components/HomeBlog.component';
-import Header from '../layouts/commons/header/Header';
 import Footer from '../layouts/commons/footer/Footer';
+import Header from '../layouts/commons/header/Header';
+
 
 const Home = () => {
   return (
     <>
-      <Header />
+          <Header />
+
       <BannerSlides/>
       <div className="section-block background-gray">
       <HomeServiced
@@ -25,6 +27,7 @@ const Home = () => {
       <HomeBlog />
       <HomeAboutUs />
       <Footer />
+
     </>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import BlockResidenceComponent from '../../layouts/commons/block/BlockResidence.component';
 import { listProducts } from '../data';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 
 const HomeServiced = props => {
   return (
@@ -31,9 +32,10 @@ const HomeServiced = props => {
         </Swiper>
 
         <div className="col-12 mt-5 text-center">
-          <button className="btn-showmore">
+          {/* <button className="btn-showmore">
             Xem thêm
-          </button>
+          </button> */}
+          <Link className="btn-showmore" href="/products">Xem thêm</Link>
         </div>
       </div>
     </div>

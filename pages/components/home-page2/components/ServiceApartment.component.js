@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import BreadcrumbServiceApartment from './Breadcrumb.ServiceApartment';
 import previousIcon from '../../../assets/images/arrow-left.png';
 import nextIcon from '../../../assets/images/arrow-right.png';
 import ReactPaginate from 'react-paginate';
-import { ServiceBanner } from '../../../assets/images/web-isn';
+import { ServiceBanner } from '../../../../public/images/web-isn';
 import { HeartIcon } from '../../../layouts/commons/icons';
-import OwlCarousel from 'react-owl-carousel2';
+// import OwlCarousel from 'react-owl-carousel2';
 import { ICON_LEFT, ICON_RIGHT } from '../../../utils/constants';
 import { getPathLanguage } from '../../../utils/params';
 import { LoginComponent } from '../../loginPage/pages';
 import ForgotModal from '../../../modules/forgotPassword/pages/ForgotModal.component';
 import { VerifyEmailComponent } from '../../signUp/pages';
 import { formatMoney } from '../../../utils/objects';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import useFullPageLoader from '../../commons/isn/useFullPageLoader';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+import useFullPageLoader from '../../common3/isn/useFullPageLoader';
 import { data } from '../data';
 
 const ServiceApartmentComponent = () => {
@@ -131,7 +129,7 @@ const ServiceApartmentComponent = () => {
               <div id="serviceApartment" className="p-3 col-xl-4 col-md-6 col-sm-12 col-12" key={index}>
                 <div className="project-info justify-content-center align-items-center mt-3">
                   <div className="container-slider">
-                    <OwlCarousel options={option}>
+                    {/* <OwlCarousel options={option}>
                       {item.images.map((sliderImage, i) => {
                         return (
                           <div className="slide" key={i}>
@@ -141,7 +139,7 @@ const ServiceApartmentComponent = () => {
                           </div>
                         );
                       })}
-                    </OwlCarousel>
+                    </OwlCarousel> */}
                   </div>
                   <div
                     onClick={e => handleLike(e)}
@@ -187,7 +185,7 @@ const ServiceApartmentComponent = () => {
         <div id="serviceApartment">
           <div className="position-relative service-banner">
             <div className="overlay-text">Danh sách sản phẩm</div>
-            <LazyLoadImage src={ServiceBanner} alt="banner" />
+            {/* <LazyLoadImage src={ServiceBanner} alt="banner" /> */}
             <div className="color-overlay"></div>
           </div>
           <div className="container">
@@ -231,8 +229,8 @@ const ServiceApartmentComponent = () => {
           {listServiced && listServiced.totalRecords > 15 ? (
             <div className="service-paginate">
               <ReactPaginate
-                previousLabel={<LazyLoadImage src={previousIcon} alt="nav-btn" />}
-                nextLabel={<LazyLoadImage src={nextIcon} alt="nav-btn" />}
+                // previousLabel={<LazyLoadImage src={previousIcon} alt="nav-btn" />}
+                // nextLabel={<LazyLoadImage src={nextIcon} alt="nav-btn" />}
                 pageRangeDisplayed={1}
                 marginPagesDisplayed={2}
                 pageCount={pageCount}
@@ -268,15 +266,9 @@ const ServiceApartmentComponent = () => {
           />
         </div>
       </React.Fragment>
-      {loader}
+      {loader}    
     </>
   );
 };
 
-const mapStatetoProps = state => ({
-  ...state,
-});
-
-const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
-
-export default connect(mapStatetoProps, mapDispatchToProps)(ServiceApartmentComponent);
+export default ServiceApartmentComponent;

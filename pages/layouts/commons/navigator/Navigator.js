@@ -65,27 +65,27 @@ const Navigator = () => {
 
   const currentMenu = [
     {
-      link_href: `/en/list-products`,
+      link_href: `/products`,
       link_label: 'Sản phẩm',
-      // active: location.pathname.includes(`/list-products`),
+      // active: location.pathname.includes(`/`),
     },
     {
-      link_href: `/en/list-news`,
+      link_href: `/news`,
       link_label: 'Bài viết',
-      // active: location.pathname.includes(`/list-news`),
+      // active: location.pathname.includes(`/news`),
     },
     {
-      link_href: `/en/contact`,
+      link_href: `/contact`,
       link_label: 'Liên hệ',
       // active: location.pathname.includes(`/contact`),
     },
     {
-      link_href: `/en/faq`,
+      link_href: `/faq`,
       link_label: 'FAQ',
       // active: location.pathname.includes(`/faq`),
     },
     {
-      link_href: `/en/about-nancy`,
+      link_href: `/about-nancy`,
       link_label: 'Về Nancy',
       // active: location.pathname.includes(`/about-nancy`),
     },
@@ -114,7 +114,7 @@ const Navigator = () => {
   const logout = () => {
     localStorage.removeItem('authUserData');
     setShowUserMenu(false);
-    // history.push(`/en`);
+    // history.push(``);
   };
 
   const DropdownItems = () => {
@@ -143,7 +143,7 @@ const Navigator = () => {
           <div className="row align-items-center d-flex bd-highlight">
             <div className="col-4 col-md-2">
               <div className="header-logo-image text-left">
-                <Link href="#">
+                <Link href='/'>
                   <Image alt="Nancy logo" src={NancyLogo} effect="blur" style={{ width: '105px' }} />
                 </Link>
               </div>

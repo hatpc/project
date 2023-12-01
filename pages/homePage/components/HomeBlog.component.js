@@ -1,8 +1,13 @@
 import React, { useRef } from 'react';
+import Link from 'next/link';
+import { items } from '../../../pages/listOffers1/data';
+
+
 import BlockBlogComponent from '../../layouts/commons/block/BlockBlog.component';
-import { ARROW_LEFT, ARROW_RIGHT } from '../../utils/constants';
+import { ARROW_LEFT, ARROW_RIGHT } from '../../utils/constants';  
 import { banner6, banner8, SmallNote } from '../../../public/images/nancy';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 const HomeBlog = () => {
   const items = [
@@ -10,19 +15,19 @@ const HomeBlog = () => {
       "id": 3,
       "blogTitle": "Nancy vừa nhập một lô hàng lịch để bàn siêu cute để phục vụ khách hàng",
       "blogThumnail": SmallNote,
-      "date": "August 15, 2021",
+      "date": "August 20, 2023",
     },
     {
       "id": 2,
       "blogTitle": "Nancy vừa nhập một lô hàng lịch để bàn siêu cute để phục vụ khách hàng",
       "blogThumnail": banner6,
-      "date": "August 16, 2021",
+      "date": "August 17, 2023",
     },
     {
       "id": 1,
       "blogTitle": "Nancy vừa nhập một lô hàng lịch để bàn siêu cute để phục vụ khách hàng",
       "blogThumnail": banner8,
-      "date": "August 15, 2021",
+      "date": "August 16, 2022",
     }
   ]
 
@@ -58,10 +63,11 @@ const HomeBlog = () => {
               </Swiper>
             </div>
           </div>
-          <div className="col-12 mt-5 text-center">
-            <button className="btn-showmore">
+          <div className="col-12 mt-5 text-center ">
+            {/* <button className="btn-showmore">
               Xem thêm
-            </button>
+            </button> */}
+            <Link className="btn-showmore" href="/listOffers1">Xem thêm</Link>
           </div>
         </div>
       </div>

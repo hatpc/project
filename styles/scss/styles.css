@@ -21671,7 +21671,7 @@ a.white:hover {
   color: #fff;
 }
 
-.btn-showmore {
+.btn-showmore {  
   background: #eeeeee;
   font-weight: bold;
   font-size: 16px;
@@ -21679,6 +21679,7 @@ a.white:hover {
   border: 2px solid #202020;
   width: 174px;
   height: 44px;
+
 }
 
 html {
