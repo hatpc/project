@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { ClockIcon } from '../../../layouts/commons/icons';
-// import { ArrowRight } from '../../../public/images/web-isn';
 
 const BlockBlogComponent = props => {
   const { post } = props;
@@ -30,7 +29,6 @@ const BlockBlogComponent = props => {
           <Link href="#">
             <div className="d-flex mt-2 align-items-center">
               <span className="read-more mr-3">Đọc thêm</span>
-              {/* <img className="icon" src={ArrowRight} alt="arrow-icon"></img> */}
             </div>
           </Link>
         </div>

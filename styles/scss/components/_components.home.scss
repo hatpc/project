@@ -948,15 +948,21 @@ html {
 }
 
 .login-btn {
+  border-radius: 1rem;
   border: none;
-  background: #fff;
   font-weight: bold;
+  background: #fe6b8d;
   font-size: 16px;
   line-height: 21px;
   padding: 10px 20px 12px 20px;
   &:focus {
     outline: none;
   }
+  &:hover {
+    opacity: 0.8;
+  }
+  margin-right:45px;
+ 
 }
 .signup-btn {
   border-radius: 1rem;
@@ -7482,3 +7488,44 @@ select {
     text-decoration: underline;
   }
 }
+// .cart {
+//   position: relative;
+//   width: 40px;
+//   height: 40px;
+// }
+
+// .cart__icon {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 40px;
+//   height: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: rgb(92, 224, 92);
+//   border-radius: 50%;
+//   color: rgb(182, 127, 24);
+// }
+
+// .cart__icon svg {
+//   width: 24px;
+//   height: 24px;
+// }
+
+// .cart__count{
+//   position: absolute;
+//   top: -5px;
+//   right: -5px;
+//   width: 20px;
+//   height: 20px;
+//   background-color: #ff0000 !important;
+//   color: #fff;
+//   font-size: 12px;
+//   font-weight: bold;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50%;
+// }
+

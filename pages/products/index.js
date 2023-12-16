@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,13 +9,29 @@ import { Calendar } from '../../public/images/nancy';
 import { HeartIcon } from '../layouts/commons/icons';
 import Header from '../layouts/commons/header/Header';
 import Footer from '../layouts/commons/footer/Footer';
+import Link from 'next/link';
+import axios from "axios";
+import { useRouter } from 'next/router';
+
+const baseURL = "https://tranquil-ocean-78518-9ef85aaab544.herokuapp.com/products";
 
 const Products = () => {
+
+  const router = useRouter();
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setProducts(response?.data);
+    });
+  }, []);
+
   const displayItems = () => {
-    if (data.listProducts) {
+    if (products) {
       return (
         <div className="serviceapartment-page row">
-          {data.listProducts.map((item, index) => {
+          {products?.map((item, index) => {
             return (
               <div id="serviceApartment" className="p-3 col-xl-4 col-md-6 col-sm-12 col-12" key={index}>
                 <div className="project-info justify-content-center align-items-center mt-3">
@@ -23,7 +39,7 @@ const Products = () => {
                     <Swiper
                       className="d-flex"
                     >
-                      {item?.images?.map((element, index) => (
+                      {item?.photos?.map((element, index) => (
                         <div key={index} className="thumbail-slides thubnail-custom">
                           <SwiperSlide
                             key={index}
@@ -50,12 +66,12 @@ const Products = () => {
                     <div className="property-info d-flex flex-column">
                       <div className="d-flex justify-content-between">
                         <div className="price">
-                          {formatMoney(item.priceMin, 0, 0)}đ ~ {formatMoney(item.priceMax, 0, 0)}đ
+                          {item?.price?.toLocaleString()}đ
                         </div>
                       </div>
                     </div>
                     <div className="d-flex justify-content-between extra-btn mt-3">
-                      <button className="block-button details-block-btn">Chi tiết</button>
+                      <button className="block-button details-block-btn" onClick={() => router.push('/products/1')}>Chi tiết</button>
                       <button className="block-button booknow-block-btn">Mua ngay</button>
                     </div>
                   </div>

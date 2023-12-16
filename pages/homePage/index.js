@@ -6,16 +6,16 @@ import BannerSlides from '../layouts/commons/bannerSlides/BannerSlides';
 import HomeBlog from './components/HomeBlog.component';
 import Footer from '../layouts/commons/footer/Footer';
 import Header from '../layouts/commons/header/Header';
-
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import Shop from '../products/[id]';
 
 const Home = () => {
   return (
     <>
-          <Header />
-
-      <BannerSlides/>
+      <Header />
+      {/* <SwiperSlide /> */}
       <div className="section-block background-gray">
-      <HomeServiced
+        <HomeServiced
           section="RESIDENCES_LIKE"
           key="Hot Properties"
           headerTitle='Hot Properties'
@@ -27,6 +27,7 @@ const Home = () => {
       <HomeBlog />
       <HomeAboutUs />
       <Footer />
+      {/* <Shop /> */}
 
     </>
   );

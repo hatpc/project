@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import { items } from '../../../pages/listOffers1/data';
+import { items } from '../../blog/data';
 
 
 import BlockBlogComponent from '../../layouts/commons/block/BlockBlog.component';
@@ -64,10 +64,7 @@ const HomeBlog = () => {
             </div>
           </div>
           <div className="col-12 mt-5 text-center ">
-            {/* <button className="btn-showmore">
-              Xem thêm
-            </button> */}
-            <Link className="btn-showmore" href="/listOffers1">Xem thêm</Link>
+            <Link className="btn-showmore" href="/blog">Xem thêm</Link>
           </div>
         </div>
       </div>

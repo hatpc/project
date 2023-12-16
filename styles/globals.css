@@ -38,3 +38,11 @@ body {
 .thumbnail img {
   height: 260px !important;
 }
+
+.qty-input-box {
+  width: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  text-align: center;
+}

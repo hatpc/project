@@ -1,144 +1,49 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Subtract, SubtractDown, SubtractRed } from '../../../../public/images/web-isn';
+import React, { useState } from 'react';
 import { User, ArrowDown } from '../../../../public/images/web-isn';
-// import { LoginComponent } from '../../../';
-// import { VerifyEmailComponent } from '../../../modules/signUp/pages';
-// import ForgotModalComponent from '../../../modules/forgotPassword/pages/ForgotModal.component';
+import { UilShoppingCart } from '@iconscout/react-unicons'
 import { NancyLogo } from '../../../../public/images/nancy';
-import Image from 'next/image';
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const Navigator = () => {
-  // const language = localStorage.getItem('language');
-  const [showMenu, setShowMenu] = useState(false);
-  const refImg = useRef();
-  useOnClickOutside(refImg, () => setShowMenu(false));
-  const [showUserMenu, setShowUserMenu] = useState(false);
-  // const authUserData = JSON.parse(localStorage.getItem('authUserData'));
-  const [showLogin, setShowLogin] = useState(false);
-  const [showForgot, setShowForgot] = useState(false);
-  const [showVerifyPopup, setShowVerifyPopup] = useState(false);
+  const [showUserMenu] = useState(false);
 
-  const handleShowLogin = () => {
-    setShowLogin(true);
-    setShowForgot(false);
-  };
-
-  const closeVerifyEmailPopup = () => {
-    setShowVerifyPopup(false);
-  };
-  const showVerifyEmailPopup = () => {
-    setShowVerifyPopup(true);
-  };
-
-  const handleShowForgot = () => {
-    setShowLogin(false);
-    setShowForgot(true);
-  };
-
-  const handleShowSignUp = () => {
-    setShowLogin(false);
-    setShowVerifyPopup(true);
-  };
-
-  function useOnClickOutside(ref, handler) {
-    useEffect(
-      () => {
-        const listener = event => {
-          if (!ref.current || ref.current.contains(event.target)) {
-            return;
-          }
-          handler(event);
-        };
-        document.addEventListener('mousedown', listener);
-        document.addEventListener('touchstart', listener);
-        return () => {
-          document.removeEventListener('mousedown', listener);
-          document.removeEventListener('touchstart', listener);
-        };
-      },
-      //eslint-disable-next-line
-      [refImg, handler],
-    );
-  }
+  const router = useRouter();
+  // Lấy pathname để check active cho menus
+  const { pathname } = router || {};
 
   const currentMenu = [
     {
       link_href: `/products`,
       link_label: 'Sản phẩm',
-      // active: location.pathname.includes(`/`),
+      active: pathname.includes(`/products`),
     },
     {
-      link_href: `/news`,
+      link_href: `/blog`,
       link_label: 'Bài viết',
-      // active: location.pathname.includes(`/news`),
+      active: pathname.includes(`/blog`),
     },
     {
       link_href: `/contact`,
       link_label: 'Liên hệ',
-      // active: location.pathname.includes(`/contact`),
+      active: pathname.includes(`/contact`),
     },
     {
       link_href: `/faq`,
       link_label: 'FAQ',
-      // active: location.pathname.includes(`/faq`),
+      active: pathname.includes(`/faq`),
     },
     {
       link_href: `/about-nancy`,
       link_label: 'Về Nancy',
-      // active: location.pathname.includes(`/about-nancy`),
+      active: pathname.includes(`/about-nancy`),
     },
   ];
 
-  const listProduct = [
-    { name: "Bút mực" },
-    { name: "Sổ tay" },
-    { name: "Sách giáo khoa" },
-    { name: "Thước kẻ" },
-    { name: "Bút chì" },
-    { name: "Giấy note" },
-    { name: "Quả lưu niệm" },
-    { name: "Balo học sinh" },
-    { name: "Đồng hồ để bản" },
-    { name: "Ly thủy tinh" },
-    { name: "Bình nước" },
-  ]
-
-  // useEffect(() => {
-  //   if (authUserData && authUserData.token && authUserData.token.refresh_token) {
-  //     setShowUserMenu(true);
-  //   }
-  // }, [authUserData]);
-
-  const logout = () => {
-    localStorage.removeItem('authUserData');
-    setShowUserMenu(false);
-    // history.push(``);
-  };
-
-  const DropdownItems = () => {
-    return (
-      <ul ref={refImg} className="dropItems" id="dropScroll">
-        {listProduct.map((item, i) => {
-          return (
-            <div key={i} className="d-flex sub-menu-item">
-              <div className="icon-sub d-flex align-items-center justify-content-center">
-                <img src={Subtract} alt="icon"></img>
-              </div>
-              <li className='text-sub-active ml-0'>
-                {item.name}
-              </li>
-            </div>
-          )
-        })}
-      </ul>
-    );
-  };
-
   return (
     <>
-      <section className="section-header-logo header-logo jp-font-sawarabi-gothic" style={{ fontWeight: '500' }}>
+      <section className="section-header-logo header-logo jp-font-sawarabi-gothic py-0" style={{ fontWeight: '500' }}>
         <div className="container pt-4 pb-3">
           <div className="row align-items-center d-flex bd-highlight">
             <div className="col-4 col-md-2">
@@ -160,13 +65,13 @@ const Navigator = () => {
                   {showUserMenu === true ? (
                     <li>
                       <button className="item-link">
-                        <img src={User} alt="user-icon" style={{ width: '42px', height: '40px' }}></img>
-                        <img className="ml-2" src={ArrowDown} alt="arrow-icon"></img>
+                        <Image src={User} alt="user-icon" style={{ width: '42px', height: '40px' }}></Image>
+                        <Image className="ml-2" src={ArrowDown} alt="arrow-icon"></Image>
                       </button>
                       <ul className="wrap-dropdown-flag" style={{ top: '52px' }}>
                         <li className="flag-item">
                           <div>
-                            <span className="item-link" onClick={() => logout()}>
+                            <span className="item-link">
                               Đăng xuất
                             </span>
                           </div>
@@ -176,37 +81,22 @@ const Navigator = () => {
                   ) : (
                     <li className="px-0">
                       <div className="item-link">
-                        <button className="login-btn" onClick={() => setShowLogin(true)}>
-                          Đăng nhập
-                        </button>
-                        <button className="signup-btn" onClick={() => showVerifyEmailPopup()}>
-                          Đăng ký
-                        </button>
+                        <Link className="login-btn text-white" href="/login">Đăng nhập</Link>
+                        <Link className="signup-btn text-white" href="/signup">Đăng ký</Link>
                       </div>
                     </li>
                   )}
+                  <li className='addtocard'>
+                    <span className="position-relative">
+                      <Link className="btn-showmore card position-absolute translate-middle border border-light rounded-circle" href="/addtocard">10</Link>
+                      <UilShoppingCart />
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        {/* <LoginComponent
-          closeLogin={() => {
-            setShowLogin(false);
-          }}
-          showLogin={showLogin}
-          handleShowForgot={handleShowForgot}
-          handleShowSignUp={handleShowSignUp}
-        /> */}
-        {/* <VerifyEmailComponent
-          showVerifyEmail={showVerifyPopup}
-          hideVerifyEmail={closeVerifyEmailPopup}
-        ></VerifyEmailComponent> */}
-        {/* <ForgotModalComponent
-          showModal={showForgot}
-          hideModal={() => setShowForgot(false)}
-          handleShowLogin={handleShowLogin}
-        /> */}
       </section>
     </>
   );
