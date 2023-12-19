@@ -564,7 +564,7 @@ iframe {
     &-links {
       font-size: 20px;
       font-weight: 800;
-      color: var(--color-blue);
+      color: #be3555;
 
       &:hover {
         text-decoration: underline;
@@ -630,7 +630,7 @@ iframe {
           outline: none;
           border-radius: 2rem;
           color: var(--color-white);
-          background: var(--color-blue) !important;
+          background: #fe6b8d !important;
           box-shadow: var(--shadow-medium);
           text-transform: capitalize;
           text-rendering: optimizeLegibility;

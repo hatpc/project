@@ -33304,3 +33304,6 @@ a:link:hover {
 body.modal-open {
   height: 100vh;
 }
+.payment-modal {
+  background-color: #900!important;
+}

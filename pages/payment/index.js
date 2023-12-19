@@ -1,14 +1,27 @@
 import { useEffect, useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { UilGrinTongueWink, UilSmileBeam } from '@iconscout/react-unicons'
+import { useRouter } from 'next/router';
+
 import Footer from '../layouts/commons/footer/Footer';
 import Header from '../layouts/commons/header/Header';
 
 const Payment = () => {
+	const router = useRouter();
 	const [totalAmount, setTotalAmount] = useState(0);
+	const [show, setShow] = useState(false);
 
-useEffect(() => {
-	const cartTotalAmount = localStorage.getItem('cartTotalAmount');
-	setTotalAmount(cartTotalAmount)
-}, [])
+	const handleClose = () => {
+		setShow(true);
+		router.push('/homePage');
+	}
+	const handleShow = () => setShow(true);
+
+	useEffect(() => {
+		const cartTotalAmount = localStorage.getItem('cartTotalAmount');
+		setTotalAmount(cartTotalAmount)
+	}, [])
 
 	return (
 		<>
@@ -27,7 +40,7 @@ useEffect(() => {
 													<strong>Payment</strong>
 													<span></span>
 												</span>
-					 						</div>
+											</div>
 										</div>
 										<div className="card-data flex-fill flex-vertical">
 											<div className="flex-between flex-vertical-center">
@@ -138,9 +151,27 @@ useEffect(() => {
 											</div>
 										</div>
 										<div className="action flex-center">
-											<button type="button" className="btn btn-primary b-main-color pointer">
+											<Button className="b-main-color pointer" variant="primary" onClick={handleShow}>
 												Pay Now
-											</button>
+											</Button>
+											<Modal show={show} onHide={handleClose}>
+												<Modal.Header>
+													<Modal.Title>Đặt hàng thành công <UilSmileBeam color="#fe6bbd" size="40" /> </Modal.Title>
+												</Modal.Header>
+												<Modal.Body>cảm ơn quý khách đã sử dụng sản phẩm của chúng tôi trong suốt thời gian qua.<br />
+													Rất mong được phục vụ quý khách lần tới.<br />
+													Chúc quý khách vui vẻ và thành công. < UilGrinTongueWink color="#fe6bbd" fontsize="30px" />
+
+												</Modal.Body>
+												<Modal.Footer>
+													<Button variant="secondary" onClick={handleShow}>
+														trở về
+													</Button>
+													<Button className='payment-modal' onClick={handleClose} variant="primary" >
+														Trang chủ
+													</Button>
+												</Modal.Footer>
+											</Modal>
 										</div>
 									</form>
 								</div>

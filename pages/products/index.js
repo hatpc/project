@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import { data } from './data';
-import { formatMoney } from '../utils/objects';
+import FullPageLoading from '../components/fullPageLoading/FullPageLoading';
 import { Calendar } from '../../public/images/nancy';
 import { HeartIcon } from '../layouts/commons/icons';
 import Header from '../layouts/commons/header/Header';
 import Footer from '../layouts/commons/footer/Footer';
-import Link from 'next/link';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { data } from './data';
 
 const baseURL = "https://tranquil-ocean-78518-9ef85aaab544.herokuapp.com/products";
 
@@ -20,72 +18,90 @@ const Products = () => {
   const router = useRouter();
 
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleGetProducts = useCallback(async () => {
+    try {
+      setIsLoading(true);
+      // await axios.get(baseURL).then((response) => {
+      //   setProducts(response?.data);
+      // });
+      setProducts(data?.listProducts);
+    } catch (error) {
+      setIsLoading(false);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setProducts(response?.data);
-    });
-  }, []);
+    handleGetProducts()
+  }, [handleGetProducts]);
 
   const displayItems = () => {
     if (products) {
       return (
-        <div className="serviceapartment-page row">
-          {products?.map((item, index) => {
-            return (
-              <div id="serviceApartment" className="p-3 col-xl-4 col-md-6 col-sm-12 col-12" key={index}>
-                <div className="project-info justify-content-center align-items-center mt-3">
-                  <div className="container-slider">
-                    <Swiper
-                      className="d-flex"
-                    >
-                      {item?.photos?.map((element, index) => (
-                        <div key={index} className="thumbail-slides thubnail-custom">
-                          <SwiperSlide
-                            key={index}
-                            className="nav-top owl-carousel owl-theme owl-loaded owl-drag owl-home-properties col-item"
-                          >
-                            <div style={{ backgroundImage: `${element.url}` ? '' : `url("${banner1}")` }} className="thumbnail">
-                              <Image alt="post 1" src={element?.url} layout='cover' />
-                            </div>
-                          </SwiperSlide>
-                          <span
-                            //   onClick={() => onClickLike()}
-                            className='heart circle'
-                          >
-                            <HeartIcon />
-                          </span>
-                        </div>
-                      ))}
-                    </Swiper>
-                  </div>
-                  <div className="content">
-                    <div className="project-name">
-                      <p>{item.name}</p>
+        <>
+          <div className="serviceapartment-page row">
+            {products?.map((item, index) => {
+              return (
+                <div id="serviceApartment" className="p-3 col-xl-4 col-md-6 col-sm-12 col-12" key={index}>
+                  <div className="project-info justify-content-center align-items-center mt-3">
+                    <div className="container-slider">
+                      <Swiper
+                        className="d-flex"
+                      >
+                        {item?.images?.map((element, index) => (
+                          <div key={index} className="thumbail-slides thubnail-custom">
+                            <SwiperSlide
+                              key={index}
+                              className="nav-top owl-carousel owl-theme owl-loaded owl-drag owl-home-properties col-item"
+                            >
+                              <div style={{ backgroundImage: `${element.url}` ? '' : `url("${banner1}")` }} className="thumbnail">
+                                <Image alt="post 1" src={element?.url} layout='cover' />
+                              </div>
+                            </SwiperSlide>
+                            <span
+                              //   onClick={() => onClickLike()}
+                              className='heart circle'
+                            >
+                              <HeartIcon />
+                            </span>
+                          </div>
+                        ))}
+                      </Swiper>
                     </div>
-                    <div className="property-info d-flex flex-column">
-                      <div className="d-flex justify-content-between">
-                        <div className="price">
-                          {item?.price?.toLocaleString()}đ
+                    <div className="content">
+                      <div className="project-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="property-info d-flex flex-column">
+                        <div className="d-flex justify-content-between">
+                          <div className="price">
+                            {item?.priceMin?.toLocaleString()}đ
+                            ~
+                            {item?.priceMax?.toLocaleString()}đ
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="d-flex justify-content-between extra-btn mt-3">
-                      <button className="block-button details-block-btn" onClick={() => router.push('/products/1')}>Chi tiết</button>
-                      <button className="block-button booknow-block-btn">Mua ngay</button>
+                      <div className="d-flex justify-content-between extra-btn mt-3">
+                        <button className="block-button details-block-btn" onClick={() => router.push('/products/1')}>Chi tiết</button>
+                        <button className="block-button booknow-block-btn">Mua ngay</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </>
       );
     }
   };
 
   return (
     <>
+      {isLoading && <FullPageLoading />}
       <Header />
       <React.Fragment>
         <div id="serviceApartment" className='position-relative service-banner'>

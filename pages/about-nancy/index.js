@@ -1,6 +1,17 @@
 import React from 'react';
 import { ServiceBanner } from '@/public/images/web-isn';
 import Image from 'next/image';
+import {
+  UilGlobe, UilAnchor, UilHourglass,
+  UilCloudDatabaseTree,
+  UilUploadAlt,
+  UilCamera,
+  UilInstagramAlt,
+  UilGithub,
+  UilFacebook,
+  UilTelegram
+} from '@iconscout/react-unicons'
+
 import { HeartIcon } from '../layouts/commons/icons';
 import Footer from '../layouts/commons/footer/Footer';
 import Header from '../layouts/commons/header/Header';
@@ -28,7 +39,7 @@ const AboutNancyComponent = () => {
                   <div className="clearfix mb-3">
                   </div>
                   <div className="my-2 text-center">
-                    <h1>Thang Dao</h1>
+                    <h1>Thang</h1>
                   </div>
                   <div className="mb-3">
                     <h2 className="text-uppercase text-center role">Founder</h2>
@@ -36,10 +47,10 @@ const AboutNancyComponent = () => {
                   <div className="box">
                     <div>
                       <ul className="list-inline">
-                        {/* <li className="list-inline-item"><i className="fab fa-github"></i></li>
-                        <li className="list-inline-item"><i className="fab fa-linkedin-in"></i></li> */}
-                        <li className="list-inline-item"><i className="fab fa-instagram"></i></li>
-                        <li className="list-inline-item"><i className="fab fa-twitter"></i></li>
+                      <li className="list-inline-item"><UilGithub color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilFacebook /></li>
+                        <li className="list-inline-item"><UilInstagramAlt color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilTelegram /></li>
                       </ul>
                     </div>
                   </div>
@@ -58,7 +69,7 @@ const AboutNancyComponent = () => {
                   <div className="clearfix mb-3">
                   </div>
                   <div className="my-2 text-center">
-                    <h1>Nam Phan</h1>
+                    <h1>Thang</h1>
                   </div>
                   <div className="mb-3">
                     <h2 className="text-uppercase text-center role">Manager</h2>
@@ -66,10 +77,10 @@ const AboutNancyComponent = () => {
                   <div className="box">
                     <div>
                       <ul className="list-inline">
-                        {/* <li className="list-inline-item"><i className="fab fa-github"></i></li>
-                        <li className="list-inline-item"><i className="fab fa-linkedin-in"></i></li> */}
-                        <li className="list-inline-item">  <HeartIcon /></li>
-                        <li className="list-inline-item">  <HeartIcon /></li>
+                      <li className="list-inline-item"><UilGithub color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilFacebook /></li>
+                        <li className="list-inline-item"><UilInstagramAlt color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilTelegram /></li>
                       </ul>
                     </div>
                   </div>
@@ -88,7 +99,7 @@ const AboutNancyComponent = () => {
                   <div className="clearfix mb-3">
                   </div>
                   <div className="my-2 text-center">
-                    <h1>Nancy Nguyen</h1>
+                    <h1>Nancy</h1>
                   </div>
                   <div className="mb-3">
                     <h2 className="text-uppercase text-center role">Vice Manager</h2>
@@ -96,10 +107,10 @@ const AboutNancyComponent = () => {
                   <div className="box">
                     <div>
                       <ul className="list-inline">
-                        {/* <li className="list-inline-item"><i className="fab fa-github"></i></li>
-                        <li className="list-inline-item"><i className="fab fa-linkedin-in"></i></li> */}
-                        <li className="list-inline-item"><i className="fab fa-instagram"></i></li>
-                        <li className="list-inline-item"><i className="fab fa-twitter"></i></li>
+                        <li className="list-inline-item"><UilGithub color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilFacebook /></li>
+                        <li className="list-inline-item"><UilInstagramAlt color= "#FD6307" /></li>
+                        <li className="list-inline-item"><UilTelegram /></li>
                       </ul>
                     </div>
                   </div>
@@ -127,37 +138,37 @@ const AboutNancyComponent = () => {
                 <p>When you choose us, you&apos;ll feel the benefit of 10 years&apos; experience of Web Development. Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_one"><i className="fa fa-globe"></i></span>
+                <div className="item"> <span className="icon feature_box_col_one"><UilGlobe size="50" /></span>
                   <h6>Modern Design</h6>
                   <p>We use latest technology for the latest world because we know the demand of peoples.</p>
                 </div>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_two"><i className="fa fa-anchor"></i></span>
+                <div className="item"> <span className="icon feature_box_col_two"><UilAnchor size="50" /></span>
                   <h6>Creative Design</h6>
                   <p>We are always creative and and always lisen our costomers and we mix these two things and make beast design.</p>
                 </div>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_three"><i className="fa fa-hourglass-half"></i></span>
+                <div className="item"> <span className="icon feature_box_col_three"><UilHourglass size="50" /></span>
                   <h6>24 x 7 User Support</h6>
                   <p>If our customer has any problem and any query we are always happy to help then.</p>
                 </div>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_four"><i className="fa fa-database"></i></span>
+                <div className="item"> <span className="icon feature_box_col_four"><UilCloudDatabaseTree size="50" /></span>
                   <h6>Business Growth</h6>
                   <p>Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you&apos;re climbing it</p>
                 </div>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_five"><i className="fa fa-upload"></i></span>
+                <div className="item"> <span className="icon feature_box_col_five"><UilUploadAlt size="50" /></span>
                   <h6>Market Strategy</h6>
                   <p>Holding back technology to preserve broken business models is like allowing blacksmiths to veto the internal combustion engine in order to protect their horseshoes.</p>
                 </div>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <div className="item"> <span className="icon feature_box_col_six"><i className="fa fa-camera"></i></span>
+                <div className="item"> <span className="icon feature_box_col_six"><UilCamera size="50" /></span>
                   <h6>Affordable cost</h6>
                   <p>Love is a special word, and I use it only when I mean it. You say the word too much and it becomes cheap.</p>
                 </div>

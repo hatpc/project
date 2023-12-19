@@ -42,7 +42,6 @@ function Shopping() {
   };
   return (
     <div className='card'>
-
       <div id="services" className="services section-bg">
         <Header />
         <div className="container-fluid">

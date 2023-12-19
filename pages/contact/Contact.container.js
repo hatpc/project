@@ -1,4 +1,4 @@
-import ContactComponent from '../containers/Contact.component';
+// import ContactComponent from '../containers/Contact.component';
 
 
 const mapStateToProps = state => ({
@@ -7,4 +7,4 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
-export default ContactComponent;
+export default mapStateToProps;

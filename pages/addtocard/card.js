@@ -163,8 +163,8 @@ function AddToCard() {
                     <tr>
                       <th>&nbsp;</th>
                       <th colSpan="3">&nbsp;</th>
-                      <th>Items in Cart<span className="ml-2 mr-2">:</span><span className="text-danger">&nbsp;{cartTotalQty}</span></th>
-                      <th className="text-right">Total Price<span className="ml-2 mr-2">:</span><span className="text-danger">&nbsp;{cartTotalAmount.toLocaleString()} đ</span></th>
+                      <th>Giỏ hàng<span className="ml-2 mr-2">:</span><span className="text-danger">&nbsp;{cartTotalQty}</span></th>
+                      <th className="text-right">Tổng tiền<span className="ml-2 mr-2">:</span><span className="text-danger">&nbsp;{cartTotalAmount.toLocaleString()} đ</span></th>
                       <th><button onClick={()=>handleToPayment()} className='btn btn-rounded btn-warning'>Thanh toán</button></th>
                     </tr>
                   </tfoot>

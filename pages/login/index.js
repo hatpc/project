@@ -44,37 +44,37 @@ const Login = () => {
   return (
     <div className='login-org'>
       <div className='all'>
-        <div class="main">
-          <div class="container">
-            <section class="wrapper">
-              <div class="heading">
-                <h1 class="text text-large">Đăng nhập</h1>
-                <p class="text text-normal">Người dùng mới <span>
-                  {/* <a href="#" class="text text-links">Tạo tài khoản</a> */}
+        <div className="main">
+          <div className="container">
+            <section className="wrapper">
+              <div className="heading">
+                <h1 className="text text-large">Đăng nhập</h1>
+                <p className="text text-normal">Người dùng mới <span>
+                  {/* <a href="#" className="text text-links">Tạo tài khoản</a> */}
                   <Link className="text text-links" href="/signup">
                     Tạo tài khoản
                   </Link>
                 </span>
                 </p>
               </div>
-              <form onSubmit={handleSubmit(handleRegistration, handleError)} name="signin" class="form" >
-                <div class="input-control d-flex flex-column">
-                  <label for="email" class="input-label" hidden>Điền email</label>
-                  <input type="email" name="email" id="email" class="input-field" placeholder="Nhập email hoặc sdt để đăng nhập" {...register('email', registerOptions.email)} />
+              <form onSubmit={handleSubmit(handleRegistration, handleError)} name="signin" className="form" >
+                <div className="input-control d-flex flex-column">
+                  <label for="email" className="input-label" hidden>Điền email</label>
+                  <input type="email" name="email" id="email" className="input-field" placeholder="Nhập email hoặc sdt để đăng nhập" {...register('email', registerOptions.email)} />
                   <small className='hook-form'>
                     {errors?.email && errors.email.message}
                   </small>
                 </div>
-                <div class="input-control d-flex flex-column">
-                  <label for="password" class="input-label" hidden>Mật khẩu</label>
-                  <input type="password" name="password" id="password" class="input-field" placeholder="Nhập mật khẩu của bạn" {...register('password', registerOptions.password)} />
+                <div className="input-control d-flex flex-column">
+                  <label for="password" className="input-label" hidden>Mật khẩu</label>
+                  <input type="password" name="password" id="password" className="input-field" placeholder="Nhập mật khẩu của bạn" {...register('password', registerOptions.password)} />
                   <small className='hook-form'>
                     {errors?.password && errors.password.message}
                   </small>
                 </div>
-                <div class="input-control">
-                  <a href="#" class="text text-links">Quên mật khẩu</a>
-                  <input onClick={() => handleLogin()} type="submit" class="input-submit" value="Đăng nhập" />
+                <div className="input-control">
+                  <a href="#" className="text text-links">Quên mật khẩu</a>
+                  <input onClick={() => handleLogin()} type="submit" className="input-submit" value="Đăng nhập" />
                 </div>
               </form>
             </section>

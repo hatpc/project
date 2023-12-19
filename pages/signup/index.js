@@ -31,6 +31,12 @@ const Signup = () => {
       },
     }
   };
+  const handleSignup = () => {
+    if (isEmpty(errors) && submitCount > 0 ) {
+      router.push('/');
+    }
+    return;
+  }
   return (
     <div className='login-org'>
       <div className='all'>
@@ -49,7 +55,7 @@ const Signup = () => {
                   </small>
                 </div>
                 <div class="input-control">
-                  <input type="password" name="email" id="password" class="input-field" placeholder="Địa chỉ Email" autocomplete="off"{...register('email', d)} />
+                  <input type="email" name="email" id="email" class="input-field" placeholder="Địa chỉ Email" autocomplete="off"{...register('email')} />
                   <small className='hook-form'>
                     {errors?.email && errors.email.message}
                   </small>
@@ -71,10 +77,7 @@ const Signup = () => {
                   </small>
                 </div>
                 <div class="input-control d-flex justify-content-center">
-                  <input type="submit" name="submit" class="input-submit" value="Đăng ký" />
-                  {/* <small className='hook-form'>
-                    {errors?.email && errors.email.message}
-                  </small> */}
+                  <input onClick={() => handleSignup()} type="submit" name="submit" class="input-submit" value="Đăng ký" />
                 </div>
               </form>
             </section>
