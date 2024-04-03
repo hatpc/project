@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import { UilGoogle, UilFacebook, UilApple } from '@iconscout/react-unicons'
 import { useRouter } from 'next/router';
 import { useForm } from "react-hook-form";
 

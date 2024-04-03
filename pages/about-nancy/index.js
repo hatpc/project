@@ -12,7 +12,6 @@ import {
   UilTelegram
 } from '@iconscout/react-unicons'
 
-import { HeartIcon } from '../layouts/commons/icons';
 import Footer from '../layouts/commons/footer/Footer';
 import Header from '../layouts/commons/header/Header';
 
