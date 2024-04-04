@@ -5,7 +5,7 @@ import ResetIcon from './reset';
 import HeartIcon from './heart';
 
 
-export default {
+export {
   Location,
   SearchIcon,
   ClockIcon,
