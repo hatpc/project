@@ -3,19 +3,11 @@ import EventBus from 'eventing-bus';
 
 import Header from './commons/header/Header';
 import Footer from './commons/footer/Footer';
-/* import Subscribe from './commons/subscribe/Subscribe'; */
-import { getLanguage, getPathLanguage } from '../utils/params';
 
 const PublicLayout = props => {
-  const language = getLanguage(location);
-  const [isHiddenScroll, setIsHiddenScroll] = useState(false);
-  useEffect(() => {
-    return () => EventBus.unregisterCallbacksForEvent('checkBodyScroll');
-  }, []);
-  EventBus.on('checkBodyScroll', data => setIsHiddenScroll(data));
 
   return (
-    <div className={`wrapper ${language} ${isHiddenScroll ? 'h-100vh' : ''}`}>
+    <div className={`wrapper`}>
       <Header />
       <div className="public-layout">{props.children}</div>
       <Footer />

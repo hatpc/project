@@ -6,7 +6,6 @@ const Signup = () => {
   const router = useRouter();
   const { register, handleSubmit, formState: { errors } } = useForm({ mode: "onBlur" });
   const handleRegistration = (data) => console.log(data);
-  const handleError = (errors) => { };
   const registerOptions = {
     name: {
       required: "Nhập họ và tên",
@@ -44,7 +43,7 @@ const Signup = () => {
               <div class="heading">
                 <h1 class="text text-large">Đăng Ký</h1>
               </div>
-              <form onSubmit={handleSubmit(handleRegistration, handleError)} name="signin" class="form">
+              <form onSubmit={handleSubmit(handleRegistration)} name="signin" class="form">
                 <div class="input-control">
                   <label for="email" class="input-label" hidden>Địa chỉ Email</label>
                   <input type="text" name="name" id="email" class="input-field" placeholder="Họ và tên" autocomplete="off" {...register('name', registerOptions.name)} />

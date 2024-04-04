@@ -1,10 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { items } from '../../blog/data';
-
 
 import BlockBlogComponent from '../../layouts/commons/block/BlockBlog.component';
-import { ARROW_LEFT, ARROW_RIGHT } from '../../utils/constants';  
 import { banner6, banner8, SmallNote } from '../../../public/images/nancy';
 import { Swiper, SwiperSlide } from 'swiper/react';
 

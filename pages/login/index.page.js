@@ -4,8 +4,6 @@ import { useForm } from "react-hook-form";
 import Link from 'next/link';
 import { isEmpty } from 'lodash';
 
-
-
 const Login = () => {
   const router = useRouter();
   const { register, handleSubmit, formState: { errors, submitCount } } = useForm({ mode: "onBlur" });
@@ -85,4 +83,4 @@ const Login = () => {
   );
 }
 
-export default (Login);
+export default Login;

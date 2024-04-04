@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ARROW_LEFT, ARROW_RIGHT } from '../../utils/constants';
 import Header from '@/pages/layouts/commons/header/Header';
 import Footer from '@/pages/layouts/commons/footer/Footer';
 
@@ -16,30 +15,8 @@ import {
 
 import { listProducts } from '@/pages/homePage/data';
 
-function Shopping() {
-  const options = {
-    items: 3,
-    margin: 30,
-    nav: true,
-    dots: false,
-    autoplay: false,
-    loop: false,
-    navText: [ARROW_LEFT, ARROW_RIGHT],
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 3,
-        nav: true,
-      },
-      1000: {
-        items: 3,
-        nav: true,
-      },
-    },
-  };
+const Shopping = () => {
+  
   return (
     <div className='card'>
       <div id="services" className="services section-bg">

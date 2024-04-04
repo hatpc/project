@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { formatMoney } from '../../../utils/objects';
-import { HeartIcon } from '../../../layouts/commons/icons';
+import { HeartIcon } from '../icons/index.page';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';

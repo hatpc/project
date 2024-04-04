@@ -11,7 +11,7 @@ import BlockBlogComponent from '../layouts/commons/block/BlockBlog.component';
 
 
 
-const listOffers1 = () => {
+const ListOffers1 = () => {
   const displayItems = () => {
     return (
       <div className="serviceapartment-page row">
@@ -69,4 +69,4 @@ const listOffers1 = () => {
   );
 };
 
-export default (listOffers1);
+export default ListOffers1;

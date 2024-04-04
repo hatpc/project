@@ -1,6 +1,6 @@
 import Footer from '../layouts/commons/footer/Footer';
 import Header from '../layouts/commons/header/Header';
-import AddToCard from '../addtocard/card';
+import AddToCard from './card';
 
 const card = () => {
 	return (

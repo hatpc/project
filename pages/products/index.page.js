@@ -4,17 +4,16 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import FullPageLoading from '../components/fullPageLoading/FullPageLoading';
 import { Calendar } from '../../public/images/nancy';
-import { HeartIcon } from '../layouts/commons/icons';
+import { HeartIcon } from '../layouts/commons/icons/index.page';
 import Header from '../layouts/commons/header/Header';
 import Footer from '../layouts/commons/footer/Footer';
-import axios from "axios";
+// import axios from "axios";
 import { useRouter } from 'next/router';
 import { data } from './data';
 
-const baseURL = "https://tranquil-ocean-78518-9ef85aaab544.herokuapp.com/products";
+// const baseURL = "https://tranquil-ocean-78518-9ef85aaab544.herokuapp.com/products";
 
 const Products = () => {
-
   const router = useRouter();
 
   const [products, setProducts] = useState([]);
@@ -164,4 +163,4 @@ const Products = () => {
   );
 };
 
-export default (Products);
+export default Products;

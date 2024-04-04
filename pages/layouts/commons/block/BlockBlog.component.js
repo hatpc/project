@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { ClockIcon } from '../../../layouts/commons/icons';
+import { ClockIcon } from '../icons/index.page';
 
 const BlockBlogComponent = props => {
   const { post } = props;

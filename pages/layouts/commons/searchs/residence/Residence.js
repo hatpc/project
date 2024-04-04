@@ -1,10 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import { ResetIcon, SearchIcon } from '../../icons';
-import { Input } from '../../../../../pages/components/input/Input';
-import {
-  SearchLub,
-} from '../../../../../public/images/web-isn';
+import { ResetIcon, SearchIcon } from '../../icons/index.page';
 
 const SearchResidence = () => {
 

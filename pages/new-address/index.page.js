@@ -1,9 +1,9 @@
 import Footer from '../layouts/commons/footer/Footer';
 import React from 'react';
 import Header from '../layouts/commons/header/Header';
-import Address from '../../pages/new-address/address';
+import Address from './address';
 
-const Home = () => {
+const NewAddress = () => {
     return (
       <>
         <Header />
@@ -13,4 +13,4 @@ const Home = () => {
     );
   };
   
-  export default Home;
+  export default NewAddress;
